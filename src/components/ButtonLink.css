@@ -1,0 +1,35 @@
+.Home a{
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+  border: none;
+  border-radius: 2px;
+  display: block;
+  height: 48px;
+  line-height: 48px;
+  padding: 0 16px;
+  text-transform: uppercase;  
+  -webkit-tap-highlight-color: transparent;
+  font-size: 18px;
+  outline: 0;
+  text-decoration: none;
+  color: #fff;
+  background-color: #0f4fba;
+  text-align: center;
+  letter-spacing: .5px;
+  -webkit-transition: background-color .2s ease-out;
+  transition: background-color .2s ease-out;
+  cursor: pointer;
+  user-select: none;
+  max-width: 200px;
+  margin: 25px auto;
+}
+
+.Home a:hover {
+  -webkit-box-shadow: 0 3px 3px 0 rgba(0,0,0,0.14), 0 1px 7px 0 rgba(0,0,0,0.12), 0 3px 1px -1px rgba(0,0,0,0.2);
+   box-shadow: 0 3px 3px 0 rgba(0,0,0,0.14), 0 1px 7px 0 rgba(0,0,0,0.12), 0 3px 1px -1px rgba(0,0,0,0.2);
+  background-color: #2bbbad;
+}
+
+.Home a:hover{
+  border-color:#3f3f3f;
+}

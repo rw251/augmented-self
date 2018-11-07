@@ -1,0 +1,10 @@
+h1 {
+  padding-top:10px;
+  margin:0;
+  text-transform: uppercase;
+}
+
+p {
+  text-align: justify;
+  padding: 0 15px;
+}
