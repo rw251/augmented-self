@@ -1,6 +1,5 @@
 .App {
   text-align: center;
-  background-color: #362e2a;
-  min-height: 100vh;
-  color: #fff;
+  margin: 0 auto;
+  max-width: 600px;
 }
