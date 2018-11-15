@@ -1,0 +1,55 @@
+.CheckBox {
+  display: block;
+  position: relative;
+  padding-right: 30px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-size: 18px;
+}
+.CheckBox input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.control__indicator {
+  position: absolute;
+  top: 2px;
+  right: 0;
+  height: 20px;
+  width: 20px;
+  background: #e6e6e6;
+}
+.CheckBox:hover input ~ .control__indicator {
+  background: #ccc;
+}
+.CheckBox input:focus ~ .control__indicator {
+  background: #ccc;
+  border: 1px solid #362e2a;
+  -webkit-box-shadow: 0px 0px 11px 7px rgba(255,255,255,0.73);
+  -moz-box-shadow: 0px 0px 11px 7px rgba(255,255,255,0.73);
+  box-shadow: 0px 0px 11px 7px rgba(255,255,255,0.73);
+}
+.CheckBox input:checked ~ .control__indicator {
+  background: #2aa1c0;
+}
+.CheckBox:hover input:not([disabled]):checked ~ .control__indicator,
+.CheckBox input:checked:focus ~ .control__indicator {
+  background: #0e647d;
+}
+.control__indicator:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+.CheckBox input:checked ~ .control__indicator:after {
+  display: block;
+}
+.CheckBox .control__indicator:after {
+  left: 8px;
+  top: 4px;
+  width: 3px;
+  height: 8px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
