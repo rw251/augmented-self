@@ -78,7 +78,7 @@ function Edit() {
   }, [userId, tracks.length])
 
   const removeTrack = (track) => {
-    setTracks(tracks.filter(t => t.name !== track.name))
+    setTracks(tracks.filter(t => t.question !== track.question))
 
     const docRef = db.collection("users").doc(userId);
     docRef
@@ -94,8 +94,7 @@ function Edit() {
     event.preventDefault();
 
     const newTrack = {
-      name: document.getElementsByName('name')[0].value, 
-      description: document.getElementsByName('description')[0].value,
+      question: document.getElementsByName('question')[0].value,
       field: document.getElementsByName('field')[0].value, 
     };
 
@@ -123,17 +122,15 @@ function Edit() {
             <button onClick={signOut}>Sign out</button>
           </p>
           { tracks.map(track => 
-            <div key={track.name} className='item'>
-              <div>Name: {track.name}</div>
-              <div>Description: {track.description}</div>
+            <div key={track.question} className='item'>
+              <div>Question: {track.question}</div>
               <div>Field: {track.field}</div>
               <button onClick={e => removeTrack(track)}>Remove</button>
             </div>
             )
           }
           <form onSubmit={handleSubmit}>
-            <input type="text" placeholder="Name" name="name"></input>
-            <input type="text" placeholder="Description" name="description"></input>
+            <input type="text" placeholder="Question" name="question"></input>
             <select name="field">
               <option>text</option>
               <option>checkbox</option>
