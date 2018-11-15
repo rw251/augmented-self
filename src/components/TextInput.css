@@ -1,0 +1,24 @@
+.TextInput {
+  padding: 0;
+}
+.TextInput input {
+  width: 100%;
+  padding: 10px 0 10px 15px;
+  color: #362e2a;
+  background: #efefef;
+  border: 0;
+  border-radius: 3px;
+  outline: 0;
+  margin: 0;
+  margin-bottom: 15px;
+}
+.TextInput label {
+  display: block;
+  padding: 10px 0;
+  font-size: 18px;
+}
+.TextInput input:focus,
+.TextInput input:active {
+  color: #362e2a;
+  background: #fff;
+}
